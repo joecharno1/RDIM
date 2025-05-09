@@ -1,0 +1,620 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3A7BD5; /* Calming Blue */
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #F5A623; /* Warm Gold for hover/active */
+    color: #333;
+}
+
+.cta-button-nav {
+    background-color: #FF7F50; /* Coral for nav CTA */
+    color: white !important; /* Important to override general link color */
+    padding: 10px 18px !important;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button-nav:hover {
+    background-color: #E06F4A !important; /* Darker coral on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg'); /* Placeholder - replace with actual image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px; /* Adjust based on header height */
+    padding: 0 20px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for text readability */
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background-color: #FF7F50; /* Coral */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E06F4A;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #3A7BD5;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #ffffff;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/* Services Overview Section */
+.services-overview {
+    background-color: #f9f9f9;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #3A7BD5;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-card a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #FF7F50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.service-card a:hover {
+    background-color: #E06F4A;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #eaf2f8; /* Lighter blue background */
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.benefit {
+    background-color: white;
+    border: 1px solid #d0e0eb;
+    border-radius: 8px;
+    padding: 25px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.benefit img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #3A7BD5;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #ffffff;
+}
+
+.testimonial-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #3A7BD5;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer CTA */
+.footer-cta {
+    background-color: #3A7BD5;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-cta h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #f4f4f4;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+footer .social-media a img:hover {
+    opacity: 1;
+}
+
+/* Page Specific Headers (for Services, About, Contact) */
+.page-header {
+    background-color: #48D1CC; /* Teal accent */
+    color: white;
+    padding: 80px 20px 40px; /* Extra padding top due to fixed header */
+    text-align: center;
+    margin-top: 70px; /* Match hero margin-top */
+}
+
+.page-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Services Page Specifics */
+.services-page-content {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.services-intro {
+    font-size: 1.15em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service-detailed-list .service-detailed-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.service-detailed-list .service-detailed-item:last-child {
+    border-bottom: none;
+}
+
+.service-detailed-item img {
+    width: 100%;
+    max-width: 400px; /* Control image size */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.service-item-content {
+    flex-grow: 1;
+    min-width: 300px; /* Ensure content doesn't get too squished */
+}
+
+.service-item-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #3A7BD5;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.service-item-content p {
+    margin-bottom: 10px;
+}
+
+.service-item-content strong {
+    color: #333;
+}
+
+/* About Us Page Specifics */
+.about-us-content {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #3A7BD5;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.team-section, .values-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.therapist-profile {
+    max-width: 600px;
+    margin: 20px auto 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.therapist-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.therapist-profile h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #3A7BD5;
+    margin-bottom: 5px;
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+.values-section ul li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-left: 4px solid #48D1CC;
+}
+
+/* Contact Page Specifics */
+.contact-us-content {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-info, .contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-info h2, .contact-form-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #3A7BD5;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.map-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.map-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #3A7BD5;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .benefit {
+        width: 45%;
+    }
+    .testimonial {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Basic mobile menu: hide for now, implement toggle later */
+        /* Or flex-direction: column; align-items: center; width: 100%; background: #3A7BD5; position: absolute; top: 70px; left: 0; */
+    }
+    /* Add a class for mobile menu toggle button if implementing JS later */
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.2em;
+    }
+    .service-cards, .benefits, .contact-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card, .benefit {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .about-section, .about-section.reverse {
+        flex-direction: column;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .service-detailed-item img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: 1.5em;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    section h2 {
+        font-size: 2em;
+    }
+    .service-card, .benefit {
+        width: 95%;
+    }
+}
+
