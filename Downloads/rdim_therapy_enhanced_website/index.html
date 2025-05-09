@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDIM Therapy - Healing and Wellness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="RDIM Therapy Logo" id="logo">
+                <h1>RDIM Therapy</h1>
+            </div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="https://videos.pexels.com/video-files/854399/854399-hd_1280_720_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag. A fallback image is displayed.
+        </video>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Rediscover Your Wellbeing</h1>
+            <p>Therapeutic massage for pain relief & deep relaxation</p>
+            <button class="btn" onclick="scrollToSection('contact')">Book an Appointment</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 data-aos="fade-up">Our Services</h2>
+        <div class="service-container">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="deep-tissue-massage.jpg" alt="Deep Tissue Massage">
+                <h3>Deep Tissue Massage</h3>
+                <p>Targets deeper layers of muscle and connective tissue. Ideal for chronic aches and pains.</p>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Learn More</button>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="sports-massage.jpg" alt="Sports Massage">
+                <h3>Sports Massage</h3>
+                <p>Focuses on areas of the body that are overused and stressed from repetitive and often aggressive movements.</p>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Learn More</button>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="myofascial-release.jpg" alt="Myofascial Release">
+                <h3>Myofascial Release</h3>
+                <p>A safe and very effective hands-on technique that involves applying gentle sustained pressure into the Myofascial connective tissue restrictions.</p>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Learn More</button>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="swedish-massage.jpg" alt="Swedish Massage">
+                <h3>Swedish Massage</h3>
+                <p>Relaxing massage using long gliding strokes to reduce stress and improve circulation.</p>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 data-aos="fade-up">About Us</h2>
+        <div class="about-content" data-aos="fade-right">
+            <img src="therapist-image.jpg" alt="Lead Therapist">
+            <div>
+                <h3>Meet Our Lead Therapist: [Therapist Name]</h3>
+                <p><em>[Therapist Certifications]</em></p>
+                <p>[Client to provide a brief bio for the lead therapist. Example: With over 10 years of experience in therapeutic massage, [Therapist Name] is passionate about helping clients achieve their health and wellness goals. Specializing in deep tissue, sports massage, and myofascial release, [He/She] combines expert knowledge with a compassionate approach to deliver personalized and effective treatments. [He/She] is dedicated to creating a welcoming and healing space where clients can find relief and rejuvenation.]</p>
+            </div>
+        </div>
+        <h3 data-aos="fade-up">Our Philosophy</h3>
+        <p data-aos="fade-up">[Client to provide philosophy. Example: Our philosophy is rooted in the belief that true healing comes from a holistic understanding of the body. We combine evidence-based massage techniques with a deep respect for the body’s innate ability to heal. We strive to empower our clients with knowledge and tools to manage their pain, reduce stress, and lead healthier, more active lives. Continuous learning and professional development are core to our practice, ensuring we offer the most effective and up-to-date therapies.]</p>
+        <h3 data-aos="fade-up">Our Core Values</h3>
+        <ul data-aos="fade-up">
+            <li>Client-Centered Care: Your needs and comfort are our top priority.</li>
+            <li>Professionalism: We maintain the highest standards of practice and ethics.</li>
+            <li>Integrity: We are honest and transparent in all our interactions.</li>
+            <li>Compassion: We approach every client with empathy and understanding.</li>
+            <li>Continuous Improvement: We are committed to ongoing learning and enhancing our skills.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <p data-aos="fade-up">Ready to experience the benefits of therapeutic massage? Contact us today to schedule your appointment.</p>
+        <form action="#" method="post" data-aos="fade-up">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p data-aos="fade-up">Or call us at: [Client Phone Number]</p>
+        <p data-aos="fade-up">Visit us at: [Client Address]</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RDIM Therapy. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Check if targetId is just "#" or a valid ID
+                if (targetId.length > 1 && document.querySelector(targetId)) {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else if (targetId === "#hero") { // Special case for home/hero
+                     document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Function for scrolling to section from buttons
+        function scrollToSection(sectionId) {
+            const targetElement = document.getElementById(sectionId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Video fallback script
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById("hero-video");
+            if (video && typeof video.play === "function") {
+                video.play().catch(function(error) {
+                    console.warn("Video play failed:", error);
+                    document.body.classList.add("no-video-bg");
+                });
+
+                video.addEventListener("error", function() {
+                    console.warn("Video error event triggered.");
+                    document.body.classList.add("no-video-bg");
+                });
+            } else {
+                console.warn("Video element or play function not supported.");
+                document.body.classList.add("no-video-bg");
+            }
+
+            // Initialize AOS
+            AOS.init({
+                duration: 800, // values from 0 to 3000, with step 50ms
+                once: true, // whether animation should happen only once - while scrolling down
+            });
+        });
+    </script>
+</body>
+</html>
